@@ -1,0 +1,43 @@
+header {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+
+    strong {
+      font-size: 20px;
+      font-family: Inter;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+
+    ul {
+      display: flex;
+      gap: 20px;
+
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          color: #EEF1F6;
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1;
+
+          i {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            padding: 3px;
+            align-items: center;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.1);
+          }
+        }
+      }
+    }
+  }
