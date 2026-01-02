@@ -28,7 +28,7 @@ const Description = () => {
                                         <DragIcon />
                                         <h4>Drag & drop it here or Choose a file</h4>
                                         <span>Supported format csv, xls, csv etc.</span>
-                                        <div className="upload">Upload file</div>
+                                        <button className="upload">Upload file</button>
                                     </div>
                                 </div>
                             </section>
@@ -71,7 +71,7 @@ const Description = () => {
                                     <img src="./img/vechile.png" alt="" />
 
                                 </div>
-                                <div className="save">Save</div>
+                                <button className="save">Save</button>
 
                             </div>
 
@@ -122,7 +122,7 @@ const Description = () => {
                             <li className="text_area">
                                 <textarea placeholder='Add New Notes'>
                                 </textarea>
-                                <img src="./img/subscribe.png" alt="subscribe" />
+                                <button><img src="./img/subscribe.png" alt="subscribe" /></button>
                             </li>
                         </ul>
                     </div>

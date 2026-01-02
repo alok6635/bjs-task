@@ -9,6 +9,7 @@
 
         .description_cover {
             width: 56%;
+
             .des_overview {
                 border-radius: 10px;
                 box-shadow: 0 1px 7.8px 0 rgba(22, 71, 129, 0.05);
@@ -56,7 +57,8 @@
                             border-bottom: none;
                             border-radius: 20px;
                         }
-                        .photos{
+
+                        .photos {
                             background: #011935;
                             border-bottom: 20px;
                             color: #FFFFFF;
@@ -79,7 +81,9 @@
 
                         .drag_items {
                             margin-top: 10px;
-
+                           svg{
+                             cursor: pointer;
+                           }
                             h4 {
                                 margin-bottom: 10px;
                                 font-size: 16px;
@@ -107,6 +111,8 @@
                                 width: 50%;
                                 margin: auto;
                                 margin-bottom: 15px;
+                                border: none;
+                                cursor: pointer;
                             }
                         }
                     }
@@ -144,6 +150,7 @@
 
                             svg {
                                 margin-right: 5px;
+                                cursor: pointer;
                             }
 
                             h4 {
@@ -154,8 +161,14 @@
                                 line-height: normal;
                                 margin-bottom: 3px;
                             }
+                            h5{
+                                color: #6A7378;
+                            }
 
-                           
+
+                        }
+                        svg{
+                         cursor: pointer;
                         }
                     }
 
@@ -166,22 +179,27 @@
                             font-size: 12px;
                             font-weight: 400;
                         }
-                        span{
+
+                        span {
                             font-size: 13px;
                         }
                     }
+
                     .pdf_profile {
                         display: flex;
                         gap: 5px;
- strong {
+
+                        strong {
                             color: #6a7378;
                             font-family: Inter;
                             font-size: 12px;
                             font-weight: 400;
                         }
-                        span{
+
+                        span {
                             font-size: 13px;
                         }
+
                         img {
                             width: 32px;
                             height: 32px;
@@ -189,9 +207,10 @@
 
                         h4 {
                             color: #3d4c5e;
-                            span{
-                             font-size: 13px;
-                             display: block;
+
+                            span {
+                                font-size: 13px;
+                                display: block;
                             }
                         }
                     }
@@ -223,6 +242,8 @@
                     font-size: 14px;
                     font-weight: 500;
                     line-height: 1;
+                    border: none;
+                    cursor: pointer;
                 }
             }
         }
@@ -259,8 +280,8 @@
                 font-weight: 500;
                 line-height: 1;
                 margin-bottom: 8px;
-                            font-family: Inter;
-               
+                font-family: Inter;
+
                 span {
                     color: #3d4c5e;
                     font-family: Lato;
@@ -269,18 +290,17 @@
                     line-height: 1px;
                 }
             }
-            p{
+
+            p {
                 font-family: Inter;
                 font-weight: 400;
                 font-size: 13px;
-                color:  #3D4C5E;
-;
+                color: #3D4C5E;
+                ;
             }
         }
-
         .text_area {
             position: relative;
-
             textarea {
                 width: 100%;
                 border-radius: 12px;
@@ -288,15 +308,20 @@
                 border: 1px solid rgba(139, 169, 215, 0.4);
                 background: #fff;
                 min-height: 80px;
-                padding: 5px;
+                padding-top: 7px;
+                padding-left: 10px;
+                padding-right: 50px;
+                padding-bottom: 7px;
                 outline: none;
+                resize: none;
             }
 
             img {
                 position: absolute;
-                right: 26px;
+                right: 42px;
                 top: 35px;
                 border-radius: 0;
+                cursor: pointer;
             }
         }
     }
@@ -309,58 +334,96 @@
 }
 
 /*============= responsive css ==================*/
-/* tablet css */
-@media screen and (max-width:1200px) {
-.description {
-    & .description_data {
-        & .description_cover {
-            & .uploaded {
-                padding: 5px;
-                & .pdf_cover {
-                    .upload_data {
-                        min-width: 180px;
-                        padding: 0;
+/* desktop css */
+@media screen and (max-width:1440px) {
+    .description {
+        & .description_data {
+            & .description_cover {
+                & .uploaded {
+                    & .pdf_cover {
+                        .upload_data {
+                            min-width: 400px
+                        }
                     }
                 }
             }
         }
+
     }
 }
-}
-/* mobile css */
-@media screen and (max-width:767px) {
-    .description{
-        .description_data{
-            flex-direction: column;
-            .description_cover{
-                width: 100%;
-                .resources{
-                    ul {
-                        margin-left: 5px;
-                        li{
-                            padding:12px;
+
+/* tablet css */
+@media screen and (max-width:1200px) {
+    .description {
+        & .description_data {
+            & .description_cover {
+                .resources_cover {
+                    padding-bottom: 46px;
+
+                    & .uploaded {
+                        padding: 5px;
+
+                        & .pdf_cover {
+                            flex-direction: wrap;
+
+                            .upload_data {
+                                min-width: 180px;
+                                padding: 0;
+                            }
                         }
                     }
                 }
-                .uploaded{
-                    .pdf_cover{
+
+            }
+        }
+    }
+}
+
+/* mobile css */
+@media screen and (max-width:767px) {
+    .description {
+        .description_data {
+            flex-direction: column;
+            .description_cover {
+                width: 100%;
+                .resources_cover{
+                    padding-bottom: 0;
+ .resources {
+
+                    ul {
+                        margin-left: 5px;
+
+                        li {
+                            padding: 12px;
+                        }
+                    }
+                }
+
+                }
+               
+                .uploaded {
+                    .pdf_cover {
                         flex-wrap: wrap;
-                        .upload_data{
+
+                        .upload_data {
                             flex: 400px;
                         }
-                        .file_type{
+
+                        .file_type {
                             flex: 100px;
                             padding: 0px 20px;
                         }
-                        .pdf_profile{
+
+                        .pdf_profile {
                             flex: 100px;
                         }
                     }
                 }
             }
-             .notes_cover {
+
+            .notes_cover {
                 width: 100%;
-}
+            }
 
         }
     }

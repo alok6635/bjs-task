@@ -42,7 +42,7 @@ header {
   }
 }
 
-/* responsive css */
+/*============= responsive css================= */
 /* tablet css */
 @media screen and (max-width:1200px) {
   header {
@@ -55,7 +55,7 @@ header {
   header {
     margin-bottom: 10px;
     strong {
-        font-size: 12px;
+        font-size: 16px;
     }
     ul{
       gap:5px;

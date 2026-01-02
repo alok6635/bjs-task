@@ -129,13 +129,14 @@
           gap: 5px;
           li {
             padding: 15px 9px;
+            align-items: center;
             i{
               width: 20px;
               height: 20px;
             }
             .order_details {
               strong {
-                font-size: 14px;
+                font-size: 11px;
               }
 
               span {

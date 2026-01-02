@@ -35,7 +35,7 @@ const Footer = () => {
                                 <PhoneIconBottom />
                                 7879879897877
                             </a>
-                            <a href="info@companyname.com">
+                            <a href="mailto:info@companyname.com">
                                 <MailIconBottom />
                                 info@companyname.com
                             </a>
