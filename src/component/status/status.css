@@ -39,18 +39,51 @@
         span {
           color: #3d4c5e;
           font-size: 14px;
-             font-family: Inter;
+          font-family: Inter;
           font-weight: 400;
         }
       }
     }
+
     .select {
       display: block;
       border-radius: 20px;
-      h4{
+
+      h4 {
         font-size: 14px;
         font-weight: 600;
         margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+
+/*============= responsive css ===============*/
+/* tablet css */
+@media screen and (max-width:1200px) {
+  .status {
+    & ul {
+      & li {
+        .box {
+          min-width: unset;
+        }
+      }
+    }
+  }
+}
+
+/* mobile css */
+@media screen and (max-width:767px){
+  .status{
+    ul{
+      flex-direction: column;
+      gap: 10px;
+      li{
+        i{
+          width: 30px;
+          height: 30px;
+        }
       }
     }
   }

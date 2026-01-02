@@ -1,4 +1,3 @@
-import React from 'react'
 import "./footer.css";
 import { MailIconBottom, PhoneIconBottom } from '../../common/svg';
 
@@ -19,6 +18,7 @@ const Footer = () => {
                                 </div>
 
                             </div>
+                            
 
                         </div>
                      <div className='footer_right'>

@@ -307,3 +307,61 @@
         }
     }
 }
+
+/*============= responsive css ==================*/
+/* tablet css */
+@media screen and (max-width:1200px) {
+.description {
+    & .description_data {
+        & .description_cover {
+            & .uploaded {
+                padding: 5px;
+                & .pdf_cover {
+                    .upload_data {
+                        min-width: 180px;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+/* mobile css */
+@media screen and (max-width:767px) {
+    .description{
+        .description_data{
+            flex-direction: column;
+            .description_cover{
+                width: 100%;
+                .resources{
+                    ul {
+                        margin-left: 5px;
+                        li{
+                            padding:12px;
+                        }
+                    }
+                }
+                .uploaded{
+                    .pdf_cover{
+                        flex-wrap: wrap;
+                        .upload_data{
+                            flex: 400px;
+                        }
+                        .file_type{
+                            flex: 100px;
+                            padding: 0px 20px;
+                        }
+                        .pdf_profile{
+                            flex: 100px;
+                        }
+                    }
+                }
+            }
+             .notes_cover {
+                width: 100%;
+}
+
+        }
+    }
+}

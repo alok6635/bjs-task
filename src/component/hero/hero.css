@@ -1,7 +1,7 @@
 .hero_section {
   background: #052b4a;
 
-  
+
 
   /*=============== slider ===================*/
   .slider_section {
@@ -83,17 +83,18 @@
               font-size: 16px;
               line-height: 1;
 
-              
+
             }
+
             span {
-                display: block;
-                font-family: Inter;
-                font-weight: 400;
-                font-size: 14px;
-                margin-top: 5px;
+              display: block;
+              font-family: Inter;
+              font-weight: 400;
+              font-size: 14px;
+              margin-top: 5px;
               color: #eef1f6;
 
-              }
+            }
           }
         }
       }
@@ -117,35 +118,76 @@
 
 
 
-/* responsive css */
-
-@media screen and (max-width:100px) {
+/*=============== responsive css============ */
+/* tablet css */
+@media screen and (max-width:1200px) {
   .hero_section {
     .slider_section {
+      align-items: end;
       .slider_left {
         ul {
-          gap:5px;
-          li{ 
-           
-            .order_details{
-              strong{
-                font-size: 13px;
+          gap: 5px;
+          li {
+            padding: 15px 9px;
+            i{
+              width: 20px;
+              height: 20px;
+            }
+            .order_details {
+              strong {
+                font-size: 14px;
               }
-              span{
-                font-size: 13px;
+
+              span {
+                font-size: 12px;
 
               }
+             
             }
           }
         }
+         h2{
+                font-size: 30px;
+              }
       }
-              .slider_img {
-            width: 330px;
-        }
+
+      .slider_img {
+        width: 287px;
+      }
     }
   }
 }
-
-
-/*  */
-
+/* mobile css */
+@media screen and (max-width: 767px) {
+    .hero_section {
+        & .slider_section {
+          flex-direction: column;
+            align-items: start;
+            padding: 0 15px;
+            padding-bottom: 10px;
+            & .slider_left {
+            width: 100%;
+              ul{
+                flex-direction: column;
+                gap: 10px;
+              }
+              li{
+                width: 100%;
+              }
+                h2 {
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                }
+                h3{
+                  font-size: 18px;
+                  margin-bottom: 10px;
+                }
+            }
+            .slider_img{
+              width: 100%;
+              position: unset;
+            }
+        }
+    }
+    
+}
